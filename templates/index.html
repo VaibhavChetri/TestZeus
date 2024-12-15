@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testzeus-Hercules Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="{{ url_for('static', filename='XeeH11pwPNkoKkYMO7XCdjuink.png.webp') }}" alt="Test Zeus Logo">
+        </div>
+        
+        <!-- Form -->
+        <h1>Welcome to Testzeus-Hercules</h1>
+        <form action="/" method="POST">
+            <label for="user_input">Enter your input:</label>
+            <textarea id="user_input" name="user_input" rows="4" cols="50" placeholder="Type your input here..."></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

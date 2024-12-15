@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testzeus-Hercules Output</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <h1>Result</h1>
+
+        <h2>Your Input:</h2>
+        <p>{{ user_input }}</p>
+
+        {% if result %}
+            <h2>LLM Output:</h2>
+            <p>{{ result }}</p>
+        {% elif error %}
+            <h2>Error:</h2>
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
